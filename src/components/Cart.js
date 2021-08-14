@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 function Cart(props) {
 
@@ -39,7 +39,7 @@ function Cart(props) {
         <div onPointerLeave={leave} onPointerEnter={enter} className="image">
             <p style={displayNone} id={props.id4} >{props.rating}</p>
             <div id={props.id} style={displayNone}>
-                <a id={props.id2} href="#">More</a>
+                <Link id={props.id2} to="/info">More</Link>
             </div>
             <div>
                 <img id={props.id3} src={props.picture}/>

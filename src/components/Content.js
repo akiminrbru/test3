@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import Header from './Header';
 import Cart from './Cart';
 import axios from 'axios';
 
 
-function Main() {
+function Content() {
 
     const [moviesData, setMoviesData] = useState({
         picture: [],
@@ -23,7 +22,6 @@ function Main() {
 
     return(
         <div>
-            <Header/>
             <div className="main">
                 <Cart id={"1"} id2={"a1"} id3={"p1"} id4={"t1"} picture={moviesData.picture[0]} rating={moviesData.rating[0]}/>
                 <Cart id={"2"} id2={"a2"} id3={"p2"} id4={"t2"} picture={moviesData.picture[1]} rating={moviesData.rating[1]}/>
@@ -40,4 +38,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default Content;

@@ -20,6 +20,39 @@ body {
   padding-left: 122px;
 }
 
+.head2 header{
+  background: #1B1E21;
+  height: 62px;
+  display: flex; /* Включаем режим Flexbox. */
+  justify-content: space-between;
+}
+
+.head2 p {
+  font-size: 25px;
+  line-height: 50%;
+  width: 81px;
+  height: 29px;
+  padding-left: 122px;
+}
+
+.back {
+  width: 67px;
+  height: 40px;
+  margin-right: 122px;
+  margin-top: 11px;
+  background: #303539;
+  border-radius: 5px;
+}
+
+.back a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 5px;
+  line-height: 150%;
+}
+
 .main {
   display: flex;
   padding-left: 75px;
