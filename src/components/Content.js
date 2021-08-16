@@ -1,24 +1,11 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import Cart from './Cart';
-import axios from 'axios';
+import { Context } from './App';
 
 
 function Content() {
 
-    const [moviesData, setMoviesData] = useState({
-        picture: [],
-        title: [],
-        rating: [],
-    });
-
-    axios.get("https://yts.mx/api/v2/list_movies.json")
-    .then(response => response.data.data.movies)
-    .then(data => setMoviesData({
-        ...moviesData,
-        picture: data.map(x => x.medium_cover_image),
-        title: data.map(x => x.title),
-        rating: data.map(x => x.rating),
-    }))
+    const moviesData = useContext(Context);
 
     return(
         <div>

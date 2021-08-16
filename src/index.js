@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './components/Pages/Main';
 import './index.css';
-import Info from './components/Pages/Info';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import App from './components/App';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Route exact path="/" component={Main}/>
-      <Route path="/info" component={Info}/>
+      <App/>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
