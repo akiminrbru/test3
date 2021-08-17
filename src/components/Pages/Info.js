@@ -11,7 +11,10 @@ function Info() {
     return(
         <div>
             <Header2/>
-            <Detinf title={moviesData.title[0]}/>
+            <Detinf picture={moviesData.picturelarge[0]} 
+                    title={moviesData.title[0]}
+                    year={moviesData.year[0]}
+                    synopsis={moviesData.synopsis[0]}/>
         </div>
     )
 }

@@ -12,6 +12,9 @@ function App() {
         picture: [],
         title: [],
         rating: [],
+        picturelarge: [],
+        year: [],
+        synopsis: [],
     });
 
     axios.get("https://yts.mx/api/v2/list_movies.json")
@@ -19,8 +22,11 @@ function App() {
     .then(data => setMoviesData({
         ...moviesData,
         picture: data.map(x => x.medium_cover_image),
+        picturelarge: data.map(x => x.large_cover_image),
         title: data.map(x => x.title),
         rating: data.map(x => x.rating),
+        year: data.map(x => x.year),
+        synopsis: data.map(x => x.synopsis),
     }))
 
     return(
