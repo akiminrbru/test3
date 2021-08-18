@@ -118,6 +118,7 @@ body {
 
 .container {
   margin-left: 60px;
+  margin-right: 60px;
 }
 
 .title {
@@ -129,4 +130,36 @@ body {
 .year {
   font-size: 25px;
   line-height: 0%;
+}
+
+.comment-form {
+  display: flex;
+  width: 900px;
+  height: 100px;
+  background: rgba(163, 163, 164, 0.1);
+  border-radius: 5px;
+}
+
+.comment-form textarea {
+  width: 557px;
+  height: 70px;
+  background: #606365;
+  border-radius: 5px;
+  border: 0px;
+  margin-top: 11px;
+  margin-left: 11px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  resize: none;
+}
+
+.comment-form button {
+  width: 300px;
+  height: 74px;
+  background: #303539;
+  border-radius: 5px;
+  margin-top: 11px;
+  margin-left: 11px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
